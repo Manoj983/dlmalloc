@@ -7,7 +7,7 @@
 
 * VERSION 2.7.2 Sat Aug 17 09:07:30 2002  Doug Lea  (dl at gee)
 
-   Note: There may be an updated version of this malloc obtainable at
+   Note: There may be an updated version of this malloc obtainable atD
            ftp://gee.cs.oswego.edu/pub/misc/malloc.c
          Check before installing!
 
@@ -2129,6 +2129,8 @@ typedef struct malloc_chunk* mbinptr;
 #define last(b)      ((b)->bk)
 
 /* Take a chunk off a bin list */
+/* Exploit development heap*/
+/* Cannot return to bk during exploit development*/
 #define unlink(P, BK, FD) {                                            \
   FD = P->fd;                                                          \
   BK = P->bk;                                                          \
