@@ -1,4 +1,4 @@
-/*Research on: unlink */
+/*Research on: unlink  linklist*/
 /*
   This is a version (aka dlmalloc) of malloc/free/realloc written by
   Doug Lea and released to the public domain.  Use, modify, and
